@@ -1,0 +1,16 @@
+use("platzi_store")
+
+db.stores.insertOne({
+    storeId: "ST001",
+    name: "Nico Stored",
+    address: "Cr 234"
+})
+
+db.stores_details.insertOne({
+    storeId: "ST001",
+    description: "Informacion de la tienda",
+    manager: {
+        email: "nico@gmail.com",
+        cellphone: "+584123578456"
+    }
+})
